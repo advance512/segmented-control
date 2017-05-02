@@ -1,7 +1,7 @@
 import React, { PropTypes } from 'react'
 import _ from 'lodash'
 
-import './SegmentedControl.css'
+import style from './SegmentedControl.css'
 
 const SegmentedControl = React.createClass({
   propTypes: {
@@ -31,7 +31,7 @@ const SegmentedControl = React.createClass({
 
     return (
       <div
-        className="segmented-control"
+        className={style['segmented-control']}
         style={style}
         >
         {this.props.options.map(option => (
